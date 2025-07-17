@@ -46,7 +46,8 @@ git clone https://github.com/Zaynmiraj/querymaster
 Initialize the Database
 To begin using the model, instantiate the QueryMaster class and provide the necessary database connection details.
 
-```require_once 'QueryMaster.php';
+```
+require_once 'QueryMaster.php';
 
 try {
     // MySQL Example
@@ -66,7 +67,8 @@ try {
 
 Insert a new record into the database using the insert() method.
 
-```$insertData = ['name' => 'ZaYn Miraj', 'email' => 'zaynmiraj@example.com'];
+```
+$insertData = ['name' => 'ZaYn Miraj', 'email' => 'zaynmiraj@example.com'];
 $db->insert('users', $insertData);
 ```
 
@@ -74,7 +76,8 @@ $db->insert('users', $insertData);
 
 Update existing data using the update() method. Specify the table, data, and condition.
 
-```$updateData = ['name' => 'Jane Doe'];
+```
+$updateData = ['name' => 'Jane Doe'];
 $db->update('users', $updateData, "id = 1");
 ```
 
@@ -100,7 +103,8 @@ print_r($users);
 
 Fetch a single record by condition with findByOne().
 
-```$user = $db->findByOne('users', "email = 'john@example.com'");
+```
+$user = $db->findByOne('users', "email = 'john@example.com'");
 print_r($user);
 ```
 
@@ -108,7 +112,8 @@ print_r($user);
 
 Fetch a record by its id using the getById() method.
 
-```$user = $db->getById('users', 1);
+```
+$user = $db->getById('users', 1);
 print_r($user);
 ```
 
@@ -137,7 +142,8 @@ try {
 
 After you’re done with the database operations, close the connection to the database.
 
-```$db->close();
+```
+$db->close();
 
 ```
 
