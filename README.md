@@ -27,8 +27,8 @@ A MySQL, PostgreSQL, or SQLite database
 
 ## Clone the Repository
 
-```git clone https://github.com/your-username/advanced-php-database-model.git
-
+```
+git clone https://github.com/Zaynmiraj/querymaster
 ```
 
 ## Setup
